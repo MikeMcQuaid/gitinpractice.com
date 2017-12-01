@@ -1,0 +1,35 @@
+title: Git in Practice
+description: An opinionated, intermediate/advanced-level Git book by Mike McQuaid.
+author:
+  name: Mike McQuaid
+  email: mike@mikemcquaid.com
+  uri: http://mikemcquaid.com
+  twitter: MikeMcQuaid
+twitter:
+  username: GitInPractice
+logo: /images/GitInPractice.png
+
+permalink: pretty
+
+exclude: [bin, vendor, CNAME, Gemfile, Gemfile.lock, Guardfile, ReadMe.md, style.scss]
+
+# Same as GitHub Pages
+# https://help.github.com/articles/using-jekyll-with-pages#troubleshooting
+# Disable despite enabled on GitHub Pages for supported plugins to work.
+# safe: true
+kramdown:
+  input: GFM
+  hard_wrap: false
+lsi: false
+highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: atom.xml
+
+sass:
+  sass_dir: _sass
+  style: :compressed

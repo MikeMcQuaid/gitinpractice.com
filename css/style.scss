@@ -1,0 +1,42 @@
+---
+---
+html, body {
+  font: 1.1em Georgia, serif;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background-color: #00020a;
+  color: #fefefe;
+
+  @media only screen and (max-device-width: 480px) {
+    font-size: 1.0em;
+    line-height: 125%;
+  }
+}
+
+a {
+  &, &:link, &:visited {
+    color: #b71621;
+  }
+}
+
+#content {
+  margin: 0 auto;
+  min-width: 25em;
+  max-width: 35em;
+  padding: 0 0.5em;
+
+  @media only screen and (max-device-width: 480px) {
+    min-width: 10em;
+    margin: 0;
+  }
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  width: 512px;
+  height: auto;
+  max-width: 100%;
+}
